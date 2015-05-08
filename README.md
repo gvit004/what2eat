@@ -1,16 +1,18 @@
-# docker-nodeapp
-A HelloWorld node-in-docker application
+# What2Eat
 
-Requires:
-+ Docker
-+ Docker-compose
+Requires Docker and Docker-Compose
 
-Successfully build on a Digital Ocean droplet ( Docker 1.6.0 on 14.04 )
+Clone Repo, enter cloned folder, `docker-compose up`, PROFIT $$$
 
-git clone to directory
+`POST : /what2eat`
 
-docker-compose up
+Accepts JSON with format {"list":"apple,banana,coke"} and stores as 3 separate records
 
-\<host\>:\<node-container:port\>/ - 'HelloWorld'
+`GET : /what2eat`
 
-\<host\>:\<node-container:port\>/hellofrommongo - '"HelloWorld"'
+Retrieves random food
+
+`GET: /what2eat/all`
+
+Retrieves availiable food
+
